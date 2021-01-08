@@ -33,7 +33,7 @@ function paginateItems(page) {
 }
 paginateItems(1);
 
-//sort items by specified date
+//#3 sort items by specified date
 function itemsAfterDay(days) {
   knexInstance
     .select('name', 'price')
@@ -51,7 +51,7 @@ function itemsAfterDay(days) {
 }
 itemsAfterDay(3);
 
-//total cost for each category
+//#4 total cost for each category
 function totalCost() {
   knexInstance
     .select('category')
